@@ -1,6 +1,6 @@
 # Cascading Style Sheet Cheat Sheet
 
-Possible values are represented in _[]_, provide any one values from the array box.
+Possible values are represented in _[ ]_, provide any one values from the array box.
 
 #### Define the charset of CSS
 ```css
@@ -28,9 +28,9 @@ Possible values are represented in _[]_, provide any one values from the array b
 ```css
 background: color image repeat attachment vertical-position horizontal-position;
 
-attachement: [fixed, scroll, inherit]
-vertical-position: [top, bottom, center]
-horizontal-position: [left, right, center]
+attachement: [fixed | scroll | inherit]
+vertical-position: [top | bottom | center]
+horizontal-position: [left | right | center]
 
 /* example */
 backgorund: red url("home.png") no-repeat fixed 10px 10px;
@@ -42,7 +42,7 @@ backgorund: transparent none no-repeat inherit 0 0;
 border: width style color;
 outline: color style width;
 
-style: [dashed, dotted, double, groove, hidden, inset, none, outset, ridge, solid]
+style: [dashed | dotted | double | groove | hidden | inset | none | outset | ridge | solid]
 
 /* example */
 border: 1px solid red;
@@ -68,7 +68,7 @@ right: 3px;
 #### float
 moves the element to the given side.
 ```css
-float: [left, right]
+float: [left | right]
 
 /* example */
 float: left;
@@ -77,7 +77,7 @@ float: left;
 #### clear
 works to clear side of floated elements.
 ```css
-clear: [both, left, right]
+clear: [both | left | right]
 
 /* example */
 clear: both;
@@ -96,7 +96,7 @@ content: ' '
 
 #### cursor
 ```css
-cursor: [auto, pointer, crosshair, help, ...]
+cursor: [auto | pointer | crosshair | help, ...]
 ```
 
 #### display
@@ -111,9 +111,9 @@ display: block;
 ```css
 font: style varient weight size family;
 
-style: [normal, italic, oblique]
-varient: [normal, small-caps]
-weight: [normal, bold, lighter, bolder, 100 through 900, ...]
+style: [normal | italic | oblique]
+varient: [normal | small-caps]
+weight: [normal | bold | lighter | bolder | 100 through 900, ...]
 family: 'font-face-value or local fonts'
 
 /* example */
@@ -137,17 +137,17 @@ max-width: 500px;
 letter-spacing: 2px;
 word-spacing: 2px;
 line-height: 2;
-text-align: [center, left, right, ...]
-text-decoration: [dashed, dotted, line-through, underline, ...]
+text-align: [center | left | right | ...]
+text-decoration: [dashed | dotted | line-through | underline | ...]
 text-indent: 2px;
-text-transform: [capitalize, uppercase, lowercase, ...]
-word-break: [break-all, break-word, ...]
-word-wrap: [break-word, ...]
+text-transform: [capitalize | uppercase | lowercase | ...]
+word-break: [break-all | break-word | ...]
+word-wrap: [break-word | ...]
 ```
 
 #### list-style
 ```css
-list-style: [circle, disc, none, ...]
+list-style: [circle | disc | none | ...]
 ```
 
 #### margin & padding
@@ -166,17 +166,17 @@ padding: 3px 3px 0 0;
 ```
 #### overflow
 ```css
-overflow: [auto, scroll, hidden, visible]
+overflow: [auto | scroll | hidden | visible]
 ```
 
 #### position
 ```css
-position: [intial, static, absolute, fixed, relative]
+position: [intial | static | absolute | fixed | relative]
 ```
 
 #### visibility
 ```css
-visibility: [visible, collapse, hidden, ...]
+visibility: [visible | collapse | hidden | ...]
 ```
 
 #### z-index
