@@ -24,36 +24,66 @@ Possible values are represented in _[ ]_, provide any one values from the array 
 <link rel="stylesheet" media="screen and (min-width:40px) and (max-width:100px)" href="docPath.css"/>
 ```
 
-#### background-color
+#### background
 ```css
 background: color image repeat attachment vertical-position horizontal-position;
 
-attachement: [fixed | scroll | inherit]
-vertical-position: [top | bottom | center]
-horizontal-position: [left | right | center]
+attachement => [fixed | scroll | inherit]
+vertical-position => [top | bottom | center]
+horizontal-position => [left | right | center]
 
 /* example */
 backgorund: red url("home.png") no-repeat fixed 10px 10px;
 backgorund: transparent none no-repeat inherit 0 0; 
+
+/* other background props */
+background-clip: [border | padding]
+background-size: 50px 30px;
+
 ```
 
-#### brder & outline
+#### brder & outline & border-radius
 ```css
 border: width style color;
 outline: color style width;
+border-radius: 3px;
 
-style: [dashed | dotted | double | groove | hidden | inset | none | outset | ridge | solid]
+style => [dashed | dotted | double | groove | hidden | inset | none | outset | ridge | solid]
 
 /* example */
 border: 1px solid red;
 border: 2px solid rgb(40, 40, 40);
 border: 3px dashed #fff;
 outline: red solid 1px;
+
+/* other border props */
+border-collapse: collapse;
+```
+#### box-shadow
+```css
+box-shadow: color x-offset y-offset blur-radius spead-radius;
+
+/* example */
+box-shadow: red 1px 3px 30px 2px;
 ```
 
-#### border-collapse
+#### box-sizing
 ```css
-border-collapse: collapse;
+box-sizing: [border-box | content-box]
+```
+
+#### opacity
+max value is 1 indicating visible.
+```css
+opacaity: 1;
+```
+
+#### border-image
+```css
+border-image: source slice width outset repeat;
+
+/* example */
+border-image: url(background-image) 50px 20px 100px 30px repeat;
 ```
 
 #### top, bottom, left, right 
@@ -96,7 +126,7 @@ content: ' '
 
 #### cursor
 ```css
-cursor: [auto | pointer | crosshair | help, ...]
+cursor: [auto | pointer | crosshair | help | ...]
 ```
 
 #### display
@@ -111,10 +141,10 @@ display: block;
 ```css
 font: style varient weight size family;
 
-style: [normal | italic | oblique]
-varient: [normal | small-caps]
-weight: [normal | bold | lighter | bolder | 100 through 900, ...]
-family: 'font-face-value or local fonts'
+style => [normal | italic | oblique]
+varient => [normal | small-caps]
+weight => [normal | bold | lighter | bolder | 100 through 900 | ...]
+family => 'font-face-value or local fonts'
 
 /* example */
 font: italic small-caps 100 20px Calibri;
@@ -143,6 +173,12 @@ text-indent: 2px;
 text-transform: [capitalize | uppercase | lowercase | ...]
 word-break: [break-all | break-word | ...]
 word-wrap: [break-word | ...]
+
+
+text-shadow: horizontal-offset vertical-offset blur-radius color;
+
+/* example */
+text-shadow: 1px 2px 10px red;
 ```
 
 #### list-style
@@ -184,5 +220,44 @@ layering the controls, higher value gets layered on top.
 ```css
 z-index: 5;
 ```
+
+#### keyframes
+keyframes are used in animation property.
+```css
+@keyframes keyframename 
+{ 
+  from {...css} 
+  percentage {...css} 
+  to {...css} 
+}
+
+/* example */
+@keyframes keyframename {
+  from {top: 0px;}
+  20% { top: 100px }
+  to {top: 200px;}
+}
+```
+
+#### animation
+```css
+animation: name duration timing-function delay iteration-count direction;
+
+timing-function => [cubicbezier(number,number,number,number) | ease | ease-in | ease-in-out | ease-out | linear]
+iteration-count => [infinite, 5]
+direction => [normal | alternate]
+
+/* example */
+animation: animation-name 20s ease-in 1s 10 normal; 
+```
+#### perspective
+```css
+perspective: 20px;
+perspective-origin: 50% 50%;
+```
+
+
+// todo - gradients, transform and so on...
+
 
 
