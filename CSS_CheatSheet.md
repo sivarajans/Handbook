@@ -9,9 +9,10 @@ Possible values are represented in _[ ]_, provide any one values from the array 
 
 #### Media Queries 
 ```css
-@media screen, print { } 
+@media screen, print { ...css } 
 
-/* example */
+/* OR */
+
 <link rel="stylesheet" media="screen and (min-width:40px) and (max-width:100px)" href="docPath.css"/>
 ```
 
