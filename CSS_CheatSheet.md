@@ -7,7 +7,15 @@ Possible values are represented in _[ ]_, provide any one values from the array 
 @charset "ISO-enANY"
 ```
 
-#### font-face Definition
+#### Media Queries 
+```css
+@media screen, print { } 
+
+/* example */
+<link rel="stylesheet" media="screen and (min-width:40px) and (max-width:100px)" href="docPath.css"/>
+```
+
+#### font-face
 ```css
 /* example */
 @font-face {    
@@ -15,14 +23,6 @@ Possible values are represented in _[ ]_, provide any one values from the array 
   src:url('');    
   /* other font css ... */
 }
-```
-
-#### Media Queries 
-```css
-@media screen, print { } 
-
-/* example */
-<link rel="stylesheet" media="screen and (min-width:40px) and (max-width:100px)" href="docPath.css"/>
 ```
 
 #### background
