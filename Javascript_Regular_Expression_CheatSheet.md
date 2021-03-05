@@ -54,6 +54,18 @@
 
 `?` - zero or one is allowed
 
+## Greedy and Lazy Search
+Greedy and lazy search works in the quantifiers.   
+_Greedy_ - default search mode - searches until the sequence matches.  
+_Lazy_ - moves to next search pattern once the patterns matches minimum requirement.  
+
+`?` - Used as lazy operator.  
+
+```Javascript
+// example
+'Hello #God# and #Devil#'.match(/#.+#/g)  // `"God" and "Devil"` - 1 element matches as greedy `.` matches even # and then search comeback from end to see # at end again.
+'Hello #God# and #Devil#'.match(/#.+?#/g)  // `"God"` and `"Devil"` - 2 element matches, Lazy `?` stops the match for `.` in `G` and looks for `"` until it finds
+```
 
 ## Reference of Capturing Group
 `\n` - capturning number like `\1`
@@ -74,12 +86,15 @@
 
 ## Use in String Functions
 
-1. `"string".match(/pattern/)` - provides the following output.    
-array - containing matched string in index 0 along with capturing group values   
-index - the matched index position    
-input - original input string  
+1. `"string".match(/pattern/)` - provides the following output.   
+If `g` global search then,     
+Returns an array containing all the matched elements.  
+else      
+array - containing matched string in index 0 along with capturing group values from index 1 to n.  
+index - the first matched index position      
+input - original input string    
 
-2. `"string".search(/pattern/)` - find the index of the position matched, else -1
+2. `"string".search(/pattern/)` - find the index of the first matched position, else -1
 
 3. `"string".split(/pattern/, limit)` - split based on given pattern and output as array, limit to find specified length.
 
@@ -88,7 +103,9 @@ input - original input string
 ## Use from Regular Expression Type
 
 1. `/pattern/.exec("string")` - executes the pattern in the string   
-Returns same values as `string.match`
+array - containing matched string in index 0 along with capturing group values from index 1 to n.  
+index - the first matched index position     
+input - original input string   
 
 2. `/pattern/.test("string"` - return true if matches else false.
 
