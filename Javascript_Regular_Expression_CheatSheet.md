@@ -121,8 +121,9 @@ array - containing matched string in index 0 along with capturing group values f
 index - the first matched index position     
 input - original input string   
 
-2. `/pattern/.test("string"` - return true if matches else false.
+2. `/pattern/.test("string")` - return true if matches else false.
 
 
 
-
+Thank you for reading my docs.
+If you feel anything can be updated, please create pull request.
