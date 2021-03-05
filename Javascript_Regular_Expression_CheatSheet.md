@@ -73,13 +73,13 @@ _Lazy_ - moves to next search pattern once the patterns matches minimum requirem
 ## Use References in Regular Expression
 Using reference in same Regular Expression avoids rewriting same expression.
 
-### By Name 
+#### By Name 
 String _RegEx_ is named as *love* and reused in regex by `\k<name>`, so here it is `\k<love>`  
 ```Javascript
 /(?<love>RegEx) or \k<love>/g.exec("RegEx or RegEx") // matches "RegEx or RegEx"
 ```
 
-### By Reference number \n
+#### By Reference number \n
 Capturing group number 1 is used in regex here.
 ```Javascript
 /(RegEx) or \1/g.exec("RegEx or RegEx") // matches "RegEx or RegEx"
@@ -103,10 +103,10 @@ Capturing group number 1 is used in regex here.
 1. `"string".match(/pattern/)` - provides the following output.   
 If `g` global search then,     
 Returns an array containing all the matched elements.  
-else      
+OR        
 array - containing matched string in index 0 along with capturing group values from index 1 to n.  
 index - the first matched index position      
-input - original input string    
+input - original input string   
 
 2. `"string".search(/pattern/)` - find the index of the first matched position, else -1
 
