@@ -138,6 +138,16 @@ cursor: [auto | pointer | crosshair | help | ...]
 cursor: pointer;
 ```
 
+#### pointer-events
+Changes behaviour of events associated with pointer.  
+```css
+/* There are also SVG only property values associated with this */
+pointer-events: [auto | none]
+
+/* example */
+pointer-events: none;
+```
+
 #### display
 Set the display type for the element, display: none hides the element with no space in UI.
 ```css
@@ -343,7 +353,7 @@ backface-visibility: [hidden | visible]
 backface-visibility: visible;
 ```
 
-#### Graidents 
+#### Gradients 
 Gradients are very useful for replacing image properties and achieve greater effect.
 ```css
 linear-gradient (start-angle, color until-percentage, color until-percentage, ..., color 100%)
