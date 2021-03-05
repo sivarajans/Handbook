@@ -374,3 +374,6 @@ background: radial-gradient(50% 50%, red 35%, blue 65%, green 80%, yellow 100%);
 background: repeating-radial-gradient(20% 20%, red 35%, blue 65%, green 80%, yellow 100%);
 ```
 
+
+Thank you for reading my docs.  
+If you feel anything can be updated, please create pull request.
