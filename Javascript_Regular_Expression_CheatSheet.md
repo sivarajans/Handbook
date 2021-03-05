@@ -70,6 +70,20 @@ _Lazy_ - moves to next search pattern once the patterns matches minimum requirem
 ## Reference of Capturing Group
 `\n` - capturning number like `\1`
 
+## Use References in Regular Expression
+Using reference in same Regular Expression avoids rewriting same expression.
+
+### By Name 
+String _RegEx_ is named as *love* and reused in regex by `\k<name>`, so here it is `\k<love>`  
+```Javascript
+/(?<love>RegEx) or \k<love>/g.exec("RegEx or RegEx") // matches "RegEx or RegEx"
+```
+
+### By Reference number \n
+Capturing group number 1 is used in regex here.
+```Javascript
+/(RegEx) or \1/g.exec("RegEx or RegEx") // matches "RegEx or RegEx"
+```
 
 ## Flags
 `i` - case in-sensitive
