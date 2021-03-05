@@ -7,6 +7,8 @@
 
 `.` - anything allowed
 
+`\b` - boundary - checks for non-word (`\W`) character
+
 `\w` - only alphabetical
 
 `\W` - other than `\w` - non-word
