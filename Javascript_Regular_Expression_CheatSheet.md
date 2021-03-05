@@ -25,11 +25,19 @@
 
 `$` - ends with
 
+`|` - alteration (OR case)
+
 `()` - capturning group
 
 `(?:)` - non-capturing
 
-`|` - alteration (OR case)
+`A(?=B)` - positive look ahead - select A if A followed by B 
+
+`A(?!B)` - negative look ahead - select A if A is not followed by B
+
+`(?<=A)B` - positive look behind - select B if A preceded by B
+
+`(?<!A)B` - negative look behind - select B if A is not preceded by B
 
 ## Quantifiers
 `{n}` or `{n,n}` - qualifier limit
