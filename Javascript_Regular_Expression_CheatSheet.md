@@ -42,14 +42,17 @@
 `(?<!A)B` - negative look behind - select B if A is not preceded by B
 
 ## Quantifiers
-`{n}` or `{n,n}` - qualifier limit
+`{n}` - fixed quantity limit
+
+`{n,}` - minimun quantity limit
+
+`{n,n}` - minimum to maximum quantity limit
 
 `+` - one or more is allowed
 
 `*` - zero or more is allowed
 
 `?` - zero or one is allowed
-
 
 
 ## Reference of Capturing Group
