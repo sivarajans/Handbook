@@ -1,4 +1,4 @@
-# Cascading Style Sheet Cheat Sheet
+# Cascading Style Sheet Manual
 
 Possible values are represented in _[ ]_, provide any one values from the array box.
 
