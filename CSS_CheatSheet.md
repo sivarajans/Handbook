@@ -374,6 +374,14 @@ background: radial-gradient(50% 50%, red 35%, blue 65%, green 80%, yellow 100%);
 background: repeating-radial-gradient(20% 20%, red 35%, blue 65%, green 80%, yellow 100%);
 ```
 
+#### filter
+filter is amazing property that alters the look in variety of ways.
+```css
+filter: url('image') blur(size) contrast(percentage) greyscale(percentage) hue-rotate(degree) drop-shadow(x-axis y-axis blur color) invert(percentage) sepia(percentage) opacity(upto 1) saturate(percentage | upto 1);
+
+/* example */
+filter: url("https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png") blur(0.5px) contrast(10%) hue-rotate(3deg) drop-shadow(1px 1px 1px green) sepia(3%) invert(3%) opacity(1) saturate(0.1);
+```
 
 Thank you for reading my docs.  
 If you feel anything can be updated, please create pull request.
