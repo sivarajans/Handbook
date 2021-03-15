@@ -1,4 +1,4 @@
-# JavaScript Regular Expression Cheat Sheet
+# JavaScript Regular Expression Manual
 
 ## Main Scope
 `/` - start and end of regular expression
