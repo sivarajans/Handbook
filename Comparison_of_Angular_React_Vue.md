@@ -50,7 +50,7 @@ Below given tables with their comparision for easy understanding.
 | Properties | `@Input('Alias2PropOptional') decorator` | `this.prop` and `this.state` | 
 | Event Declaration | `@Output('Alias2EventOptional')` decorator as `EventEmitter` | _none_ | |
 | Module | `@NgModule({ declarations: ..., imports: ..., exports: ..., providers: ..., bootstrap: ..., entryComponents: ...}) class MyModule {...}` | _none_ | |
-| Component | `@Component({moduleId: id, template:..., templateUrl:..., styles:[...], styleUrls:[...]})` decorator | `class SomeComponent extends React.Component {` <br/> `constructor(){} `<br/>  `render(){} `<br/> `}`  | Component is object like <br/> `const Component = {` <br/> `el:'css-selector-to-mount'` <br/> `data:{},` <br/> `computed:{},` <br/> `methods:{},` <br/> `props:{},` <br/> `propsData:{},` <br/> `watch:{},` <br/> `template:'jsx',` <br/> `render(){ return jsx; },`  <br/>  `renderError(){},` <br/> `}` |
+| Component | `@Component({moduleId: id, template:..., templateUrl:..., styles:[...], styleUrls:[...]})` decorator | `class SomeComponent extends React.Component {` <br/> `constructor(){} `<br/>  `render(){} `<br/> `}`  | Component is object like <br/> `export default {` <br/> `name:'component-name'` <br/> `components:{ 'imported-components' },` <br/> `data():{},` <br/> `computed:{},` <br/> `methods:{},` <br/> `props:{},` <br/> `watch:{},` <br/> `}` |
 | Directive | `@Directive({selector:css-selector, providers:[...])` decorator | _none_ | 
 | Pipe | `@Pipe({...})` decorator | _none_ | 
 | Services | `@Injectable()` decorator | _directly call api  by import/require_ 
