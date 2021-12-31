@@ -85,6 +85,12 @@ opacaity: 1;
 ```css
 border-image: source slice width outset repeat;
 
+source => image url
+slice => unit to slice the image. (corners are 4 and edge regions 4 and center one can be filled with 'fill' keyword. (top right bottom left - for splitting differently in image)
+width => width to accomdate splitted image
+outset => how much unit outside of border
+repeat => [repeat, round, stretch, space]
+
 /* example */
 border-image: url(background-image) 50px 20px 100px 30px repeat;
 ```
