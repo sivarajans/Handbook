@@ -165,10 +165,10 @@ display: block;
 
 #### font
 ```css
-font: style varient weight size family;
+font: style variant weight size family;
 
 style => [normal | italic | oblique]
-varient => [normal | small-caps]
+variant => [normal | small-caps]
 weight => [normal | bold | lighter | bolder | 100 through 900 | ...]
 family => 'font-face-value or local fonts'
 
@@ -244,7 +244,13 @@ overflow: hidden;
 #### position
 Set the positioned value of element
 ```css
-position: [intial | static | absolute | fixed | relative]
+position: [intial | static | absolute | fixed | relative | sticky]
+
+fixed => relative to window / initial containing block
+sticky => scrolls and stays within window
+absolute, static, relative, sticky - relative to positioned ancestor
+static => normally flows in the document (top, right, bottom, left and z-index have no effect)
+
 
 /* example */
 position: absolute;
