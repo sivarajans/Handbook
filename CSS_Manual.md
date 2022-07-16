@@ -157,10 +157,38 @@ pointer-events: none;
 #### display
 Set the display type for the element, display: none hides the element with no space in UI.
 ```css
-display: [ inline | block | list-item | run-in | inline-block | table | inline-table | table-row-group | table-header-group | table-footer-group | table-row | table-column-group | tablecolumn | table-cell | table-caption | none | inherit ]
+display: [ inline | block | flex | grid | none | inherit ]
 
 /* example */
 display: block;
+
+
+display: flex;
+flex-direction: row | column | row-reverse | column_reverse;
+
+/* flex-children can mention below. */
+flex: 1;
+
+flex-grow -- how much it can grow when space available
+flex-shrink -- how much it can shrink when no space
+flex-basis -- initial space
+
+
+display: grid;
+grid-template-rows: 1fr 2fr;
+grid-template-columns: repeat(4, 1fr);
+
+/* grid children */
+grid-column: 1 / 4; -- from 1st line to 4th line -- 3 cells.
+grid-row: 1 / 3;  -- from 1st line to 3rd line. - taking 2 rows.
+
+
+/* alignments on grid and flex */
+align-items - vertial alignment
+align-content - horizonal content alignment
+just-content - horizontal content alignment
+justify-item - vertical item alignment - used in grid
+
 ```
 
 #### font
