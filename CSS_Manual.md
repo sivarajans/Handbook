@@ -63,7 +63,9 @@ border-collapse: collapse;
 ```
 #### box-shadow
 ```css
-box-shadow: x-offset y-offset blur spead color;
+box-shadow: where x-offset y-offset blur spead color;
+
+where - default - outside / inset;
 
 /* example */
 box-shadow: red 1px 3px 30px 2px;
