@@ -398,14 +398,14 @@ backface-visibility: visible;
 #### Gradients 
 Gradients are very useful for replacing image properties and achieve greater effect.
 ```css
-linear-gradient (start-angle, color from-unit to-unit, color from-unit to-unit, ..., color from-unit to to-unit)
-repeating-linear-gradient (start-angle, color from-unit to-unit, color from-unit to-unit, ..., color from-unit to to-unit)
+linear-gradient (start-angle, color from-unit to-unit, ..., color from-unit to-unit)
+repeating-linear-gradient (start-angle, color from-unit to-unit, ..., color from-unit to-unit)
 
-radial-gradient (radius-x radius-y at pos-x pos-y, color from-unit to-unit, color from-unit to-unit, ..., color from-unit to to-unit)
-repeating-radial-gradient (radius-x radius-y at pos-x pos-y, color from-unit to-unit, color from-unit to-unit, ..., color from-unit to to-unit)
+radial-gradient (radius-x radius-y at pos-x pos-y, color from-unit to-unit, ..., color from-unit to-unit)
+repeating-radial-gradient (radius-x radius-y at pos-x pos-y, color from-unit to-unit, ..., color from-unit to-unit)
 
-conic-gradient (from angle at pos-x pos-y, color from-unit to to-unit, from-unit to to-unit, ..., color from-unit to to-unit)
-repeating-conic-gradient (from angle at pos-x pos-y, color from-unit to to-unit, from-unit to to-unit, ..., color from-unit to to-unit)
+conic-gradient (from angle at pos-x pos-y, color from-unit to-unit, ..., color from-unit to-unit)
+repeating-conic-gradient (from angle at pos-x pos-y, color from-unit to-unit, ..., color from-unit to-unit)
 
 
 start-angle -- starts from bottom to top as default - 0 degree means to bottom to top
