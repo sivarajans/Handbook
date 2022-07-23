@@ -398,19 +398,29 @@ backface-visibility: visible;
 #### Gradients 
 Gradients are very useful for replacing image properties and achieve greater effect.
 ```css
-linear-gradient (start-angle, color until-percentage, color until-percentage, ..., color 100%)
-repeating-linear-gradient (start-angle, color until-percentage, color until-percentage, ..., color 100%)
+linear-gradient (start-angle, color from-unit to-unit, color from-unit to-unit, ..., color from-unit to to-unit)
+repeating-linear-gradient (start-angle, color from-unit to-unit, color from-unit to-unit, ..., color from-unit to to-unit)
 
-radial-gradient (radial-position-x radial-position-y, color until-percentage, color until-percentage, ..., color 100%)
-repeating-radial-gradient (radial-position-x radial-position-y, color until-percentage, color until-percentage, ..., color 100%)
+radial-gradient (radius-x radius-y at pos-x pos-y, color from-unit to-unit, color from-unit to-unit, ..., color from-unit to to-unit)
+repeating-radial-gradient (radius-x radius-y at pos-x pos-y, color from-unit to-unit, color from-unit to-unit, ..., color from-unit to to-unit)
+
+conic-gradient (from angle at pos-x pos-y, color from-unit to to-unit, from-unit to to-unit, ..., color from-unit to to-unit)
+repeating-conic-gradient (from angle at pos-x pos-y, color from-unit to to-unit, from-unit to to-unit, ..., color from-unit to to-unit)
+
+
+start-angle -- starts from bottom to top as default - 0 degree means to bottom to top
+pos-x and pos-y -- position to start drawing
+from-unit, to-unit -- any unit
+
+note - displays exact mentioned color in between given 2 units... adjacent makes gradients.
 
 /* example */
-background: linear-gradient(30deg, red 0%, blue 65%, green 80%, yellow 100%);
-
-/* before 35% repeating applied */
-background: repeating-linear-gradient(30deg, red 35%, blue 65%, green 80%, yellow 100%);
-
+background: linear-gradient(30deg, red 0% 20%, blue 65% 70%, green 80%, yellow);
+background: repeating-linear-gradient(30deg, red 3%, blue 6% 7%, green 8%, yellow 10%);
 background: radial-gradient(50% 50%, red 35%, blue 65%, green 80%, yellow 100%);
+background: repeating-radial-gradient(50% 50%, red 3%, blue 6%, green 8%, yellow 10%);
+background: conic-gradient(from 0deg at 50% 50%, red 0 25%, blue 25% 50%, green 50% 75%, yellow 100%)
+background: repeating-conic-gradient(from 0deg at 50% 50%, red 0 10%, blue 15% 20%, green 25% 30%, yellow 40%)
 
 /* when value of radial-position goes below 50%, repeating gradient shows up. if more than 50% then it can show only one cycle. */
 background: repeating-radial-gradient(20% 20%, red 35%, blue 65%, green 80%, yellow 100%);
