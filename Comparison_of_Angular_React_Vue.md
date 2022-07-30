@@ -66,7 +66,7 @@ Below given tables with their comparision for easy understanding.
 | APIs | `platformBrowserDynamic().bootstrapModule(AppModule);` | `React.createClass({...})` <br/> `ReactDOM.render(<component />, domNode, callback)` <br/> `ReactDOMServer.renderToString(<component />)` <br/> `ReactDOMServer.renderToStaticMarkup(<component />)` <br/> `ReactDOM.hydrate(<component/>, domNode)` | `Vue.createApp(ComponentFunction).mount('css-selector-to-mount')`
 
 
-# Angular Life Cycle
+# Angular Life Cycle Console Call Logs
 
 ## Initial Time
 ```
