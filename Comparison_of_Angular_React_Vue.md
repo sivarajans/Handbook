@@ -67,6 +67,8 @@ Below given tables with their comparision for easy understanding.
 
 
 # Angular Life Cycle
+
+## Initial Time
 ```
 Parent
     Child { Content-Child }
@@ -105,6 +107,28 @@ Parent AfterViewInint
 Parent AfterViewChecked
 ```
 
+On Updates
+
+```
+Parent OnChanges
+Parent DoCheck
+Parent AfterContentChecked
+
+Child OnChanges
+Child DoCheck
+
+Content-Child OnChanges
+Content-Child DoCheck
+Content-Child AfterContentChecked
+
+Child AfterContentChecked
+
+Content-Child AfterViewChecked
+
+Child AfterViewChecked
+
+Parent AfterViewChecked
+```
 
 Thank you for reading my docs.   
 If you feel anything can be updated, please create pull request.
