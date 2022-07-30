@@ -66,6 +66,45 @@ Below given tables with their comparision for easy understanding.
 | APIs | `platformBrowserDynamic().bootstrapModule(AppModule);` | `React.createClass({...})` <br/> `ReactDOM.render(<component />, domNode, callback)` <br/> `ReactDOMServer.renderToString(<component />)` <br/> `ReactDOMServer.renderToStaticMarkup(<component />)` <br/> `ReactDOM.hydrate(<component/>, domNode)` | `Vue.createApp(ComponentFunction).mount('css-selector-to-mount')`
 
 
+# Angular Life Cycle
+```
+Parent
+    Child { Content-Child }
+
+
+Parent constructor 
+Child constructor
+Content-Child constructor
+
+Parent OnChanges - if Input are passed
+Parent OnInit
+Parent DoCheck
+Parent AfterContentInit
+Parent AfterContentChecked
+
+Child OnChanges - if inputs are passed
+Child OnInit
+Child DoCheck
+
+Content-Child OnChanges -- if inputs are passed
+Content-Child OnInit
+Content-Child DoCheck
+Content-Child AfterContentInit
+Content-Child AfterContentChecked
+
+Child AfterContentInit
+Child AfterContentChecked
+
+Content-Child AfterViewInint
+Content-Child AfterViewChecked
+
+Child AfterViewInint
+Child AfterViewChecked
+
+Parent AfterViewInint
+Parent AfterViewChecked
+```
+
 
 Thank you for reading my docs.   
 If you feel anything can be updated, please create pull request.
