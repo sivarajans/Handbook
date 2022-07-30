@@ -68,11 +68,15 @@ Below given tables with their comparision for easy understanding.
 
 # Angular Life Cycle Console Call Logs
 
-## Initial Time
+## Relation
 ```
 Parent
     Child { Content-Child }
+```
 
+
+## Initial Time
+```
 
 Parent constructor 
 Child constructor
@@ -128,6 +132,50 @@ Content-Child AfterViewChecked
 Child AfterViewChecked
 
 Parent AfterViewChecked
+```
+
+# React Life Cycle Console Logs
+## Relation
+```
+Parent
+    Child
+```
+## Initial stage
+```
+Parent constructor
+Parent static getDerivedStateFromProps
+Parent render
+
+Child constructor
+Child static getDerivedStateFromProps
+Child render
+Child componentDidMount
+
+Parent componentDidMount
+```
+
+## Update stage
+```
+Parent static getDerivedStateFromProps
+Parent shouldComponentUpdate
+Parent render
+
+Child static getDerivedStateFromProps
+Child shouldComponentUpdate
+Child render
+Child getSnapshotBeforeUpdate
+
+
+Parent getSnapshotBeforeUpdate
+
+Child componentDidUpdate
+Parent componentDidUpdate
+```
+
+## UnMount stage
+```
+Child componentWillUnmount
+Parent componentWillUnmount
 ```
 
 Thank you for reading my docs.   
