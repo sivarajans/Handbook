@@ -75,7 +75,7 @@ Parent
 ```
 
 
-## Initial Time
+## Initial stage
 ```
 
 Parent constructor 
@@ -114,14 +114,14 @@ Parent AfterViewChecked
 ## On Updates
 
 ```
-Parent OnChanges
+Parent OnChanges -- if inputs are changing
 Parent DoCheck
 Parent AfterContentChecked
 
-Child OnChanges
+Child OnChanges -- if inputs are changing
 Child DoCheck
 
-Content-Child OnChanges
+Content-Child OnChanges -- if inputs are changing
 Content-Child DoCheck
 Content-Child AfterContentChecked
 
@@ -132,6 +132,12 @@ Content-Child AfterViewChecked
 Child AfterViewChecked
 
 Parent AfterViewChecked
+```
+## UnMount stage
+```
+Content-Child OnDestroy
+Child OnDestroy
+Parent OnDestroy
 ```
 
 # React Life Cycle Console Logs
@@ -154,7 +160,7 @@ Child componentDidMount
 Parent componentDidMount
 ```
 
-## Update stage
+## On Updates
 ```
 Parent static getDerivedStateFromProps
 Parent shouldComponentUpdate
@@ -169,6 +175,7 @@ Child getSnapshotBeforeUpdate
 Parent getSnapshotBeforeUpdate
 
 Child componentDidUpdate
+
 Parent componentDidUpdate
 ```
 
