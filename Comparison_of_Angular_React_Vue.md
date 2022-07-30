@@ -107,7 +107,7 @@ Parent AfterViewInint
 Parent AfterViewChecked
 ```
 
-On Updates
+## On Updates
 
 ```
 Parent OnChanges
