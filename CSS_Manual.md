@@ -404,12 +404,12 @@ repeating-linear-gradient (start-angle, color from-unit to-unit, ..., color from
 radial-gradient (radius-x radius-y at pos-x pos-y, color from-unit to-unit, ..., color from-unit to-unit)
 repeating-radial-gradient (radius-x radius-y at pos-x pos-y, color from-unit to-unit, ..., color from-unit to-unit)
 
-conic-gradient (from-angle at pos-x pos-y, color from-unit to-unit, ..., color from-unit to-unit)
-repeating-conic-gradient (from-angle at pos-x pos-y, color from-unit to-unit, ..., color from-unit to-unit)
+conic-gradient (from rotate-angle at pos-x pos-y, color from-unit to-unit, ..., color from-unit to-unit)
+repeating-conic-gradient (from rotate-angle at pos-x pos-y, color from-unit to-unit, ..., color from-unit to-unit)
 
 
 start-angle -- starts from bottom to top as default - 0 degree means to bottom to top
-from-angle in conic - are starts from top and rotate..
+rotate-angle in conic - are starts from top and rotate..
 pos-x and pos-y -- position to start drawing
 from-unit, to-unit -- any unit
 
