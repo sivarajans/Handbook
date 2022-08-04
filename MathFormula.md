@@ -4,10 +4,11 @@
 
 `n (n + 1) / 2`
 
-### Permuation 
+### Permutation 
 
 `nPr = n! / (n - r)!`
 
 ### Combination
 
 `nCr = n! / (n - r)! r!` *==* `nPr / r!`
+
