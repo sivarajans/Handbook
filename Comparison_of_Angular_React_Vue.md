@@ -55,7 +55,7 @@ Below given tables with their comparision for easy understanding.
 | Pipe | `@Pipe({...})` decorator | _none_ | 
 | Services | `@Injectable()` decorator | _directly call api  by import/require_ 
 | Function Component| _none_ |  `function Comp(prop) { return <div></div> }` | |
-| Hooks & Effects | _none_ | `useState` <br/> `setState` <br/> `useEffect`
+| Hooks & Effects | _none_ | `useState` <br/> `useMemo` <br/> `useEffect`
 | Specials Decorators | `@HostBinding()` <br/> `@HostListener('event', 'args')` <br/> `@ContentChild(predicate)` <br/> `@ContentChildren(predicate)` <br/> `@ViewChild(predicate)` <br/> `@ViewChildren(predicate)` | _none_ | 
 
 
